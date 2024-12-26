@@ -1,30 +1,37 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ededed;
+  background-color: white;
   margin: 0;
   padding: 0;
   justify-content: center;
-  height: 100vh;
 }
 
-ul,
-li {
-  padding: 0;
-  list-style: none;
+.banner-image {
+  flex: 1.5;
+  position: relative;
 }
 .layout {
   display: flex;
   height: 100vh;
 }
-
 header {
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e8e8e8;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+header h1 {
+  margin: 0;
+}
+
 .side-bar {
   flex: 1;
-  background-color: #ededed;
-  border-right: 1px solid #cfcfcf;
+  background-color: #f5f5f5;
+  border-right: 1px solid #ddd;
+  height: 100%;
 }
 .side-bar h2 {
   text-align: center;
@@ -32,26 +39,21 @@ header {
   padding: 0.83em;
 }
 
-.side-bar ul li {
-  padding: 1rem 2rem;
-}
-.side-bar ul li:hover {
-  background-color: #fff;
-}
 main {
   flex: 5;
 }
 .container {
   display: flex;
+  height: calc(100vh - 110px);
 }
 .login-image {
-  flex: 2;
-  height: 475px;
-  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .login-container {
   flex: 1;
-  background-color: rgb(14, 14, 14);
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,8 +78,8 @@ h1 {
   margin: 0;
 }
 .btn-submit {
-  color: rgb(14, 14, 14);
-  background: white;
+  color: white;
+  background: #333;
   width: 100%;
   padding: 15px 0;
   border-radius: 5px;
@@ -91,14 +93,14 @@ h1 {
 }
 .user-label {
   font-weight: 400;
-  color: #c4c4c4;
+  color: #333;
 }
 .btn-submit:hover {
   opacity: 1;
 }
 
 .login-text {
-  color: white;
+  color: #333;
 }
 #error {
   color: red;
@@ -111,8 +113,11 @@ h1 {
   background-color: #222;
   color: white;
   text-align: center;
-  padding: 15px;
   margin-top: auto;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer p {
