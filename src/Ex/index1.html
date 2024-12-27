@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MakeMeDo Login</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="layout">
+    <nav class="side-bar">
+    </nav>
+    <main>
+      <header>
+        <h2>The Company</h2>
+      </header>
+      <div class="container-box">
+        <div class="banner-image">
+          <img src="./src/image/login-bg7.png" alt="login-image" class="login-image">
+        </div>
+
+        <div class="login-container">
+          <form id="login-form">
+            <h1 class="login-text">MakeMeDo</h1>
+            <h3 class="login-text">Login to your account</h3>
+            <div class="form-group">
+              <label for="uname" class="user-label">Username</label>
+              <input type="text" id="uname" name="uname" placeholder="Enter your username" class="user-input" required>
+            </div>
+            <div class="form-group">
+              <label for="password" class="user-label">Password</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password" class="user-input"
+                required>
+            </div>
+            <button type="submit" class="btn-submit">LOGIN</button>
+            <div id="error"></div>
+          </form>
+        </div>
+      </div>
+      <footer class="footer">
+        <p>Copyright 2024 The Company. All rights reserved.</p>
+      </footer>
+    </main>
+  </div>
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html>
